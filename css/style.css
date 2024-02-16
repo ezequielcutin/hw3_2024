@@ -86,9 +86,6 @@ footer {
 .text-block {
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
-  /* padding-top:30px;
-  padding-right:30px;
-  padding-left: 30px; */
   padding: 30px;
 }
 
@@ -163,6 +160,7 @@ first div in the grid  and place it in the grid. */
   grid-column: 1 / -1;
   background-image: url('../images/header.jpg');
   background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -224,15 +222,25 @@ first div in the grid  and place it in the grid. */
 
 /* Step 8: Write the selector/rule property to style the .text-block class. */
 
-.text-block {
+/* .text-block {
   align-self:center;
   display: flex;
   text-align: center;
   flex-direction: column;
   height:max-content;
+} */
+
+.text-block {
+  align-self: center; /* Vertically center the content in the grid area */
+  justify-self: center; /* Horizontally center the content in the grid area */
+  text-align: center; /* Center-align the text inside the block */
+  /* height: max-content; Adjust the height to the content */
+
 }
 
-
+/* p {
+  font-size:100.2%;
+} */
 /* Add your media query here */
 @media screen and (min-width: 800px) {
 
